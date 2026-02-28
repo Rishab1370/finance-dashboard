@@ -2,7 +2,7 @@
 
 > A modern, fully client-side finance tracker built with React and Tailwind CSS.
 
-🔗 **[Live Demo]((https://finance-dashboard-indol-gamma.vercel.app/))** | 👨‍💻 **[Portfolio](https://rishab1370.github.io/My-Portfolio/)**
+🔗 **[Live Demo](https://finance-dashboard-indol-gamma.vercel.app/)** | 👨‍💻 **[Portfolio](https://rishab1370.github.io/My-Portfolio/)**
 
 ![Dashboard Preview](screenshot.png)
 
