@@ -61,8 +61,9 @@ const SummaryCards = () => {
         {
             title: 'Savings',
             amount: savings,
-            trend: '+5% from last month',
-            trendUp: true,
+            trend: savings > 0 ? '+5% from last month' : 'No savings this month',
+            trendUp: savings > 0,
+            trendNeutral: savings === 0,
             icon: PiggyBank,
             color: 'text-sky-600 dark:text-sky-500',
             bgColor: 'bg-sky-100 dark:bg-sky-900/50',
@@ -91,7 +92,10 @@ const SummaryCards = () => {
                     </div>
                     {card.trend && (
                         <div className="mt-4 flex items-center text-sm">
-                            <span className={clsx("font-medium", card.trendUp ? "text-green-600 dark:text-green-400" : "text-red-600 dark:text-red-400")}>
+                            <span className={clsx("font-medium",
+                                card.trendNeutral ? "text-slate-500 dark:text-slate-400" :
+                                    card.trendUp ? "text-green-600 dark:text-green-400" : "text-red-600 dark:text-red-400"
+                            )}>
                                 {card.trend}
                             </span>
                         </div>

@@ -12,7 +12,13 @@ dist
 dist-ssr
 *.local
 
-# Editor directories and files
+# Editor directories and files# Create .gitignore
+echo "node_modules/
+dist/
+.env
+.DS_Store
+*.log" > .gitignore
+
 .vscode/*
 !.vscode/extensions.json
 .idea
